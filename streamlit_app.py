@@ -1,9 +1,9 @@
 import streamlit;
 streamlit.header("Breakfast Menu");
-streamlit.title("Bread");
-streamlit.title("Butter");
-streamlit.title("Milk");
-streamlit.title("Masala Tea");
-streamlit.title("Orange Juice");
-streamlit.title("Boiled Egg");
+streamlit.text("Bread");
+streamlit.text("Butter");
+streamlit.text("Milk");
+streamlit.text("Masala Tea");
+streamlit.text("Orange Juice");
+streamlit.text("Boiled Egg");
 
