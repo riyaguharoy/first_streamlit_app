@@ -1,5 +1,6 @@
 import streamlit;
 import pandas;
+import requests;
 streamlit.title('My parents new healthy breakfast')
 streamlit.header('Breakfast Menu')
 streamlit.text('🥣 Omega 3 & Blueberry Oatmeal')
@@ -14,3 +15,5 @@ my_fruit_list=my_fruit_list.set_index('Fruit');
 fruit_selected=streamlit.multiselect("pick some fruits:", list(my_fruit_list.index), ['Avocado','Strawberries']);
 ##fruit_show=my_fruit_list.loc[fruit_selected]
 ##streamlit.dataframe(fruit_show);
+fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
+streamlit.text(fruityvice_response)
