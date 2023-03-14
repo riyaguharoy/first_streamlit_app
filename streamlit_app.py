@@ -14,7 +14,10 @@ my_fruit_list=my_fruit_list.set_index('Fruit');
 fruit_selected=streamlit.multiselect("pick some fruits:", list(my_fruit_list.index), ['Avocado','Strawberries']);
 ##fruit_show=my_fruit_list.loc[fruit_selected]
 ##streamlit.dataframe(fruit_show);
-import requests;
+import requests
+fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
+streamlit.text(fruityvice_response)
+
 streamlit.header("Fruityvice Fruit Advice!")
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
 #streamlit.text(fruityvice_response)
