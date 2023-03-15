@@ -1,4 +1,3 @@
 # pip install -r requirements.txt
-# pip freeze > requirements01.txt
-# pip list --outdated
+# pip install --upgrade snowflake-connector-python
 snowflake-connector-python
